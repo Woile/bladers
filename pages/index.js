@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Subscribe from "./Subscribe";
+
 export default function Home() {
   return (
     <div>
