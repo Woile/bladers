@@ -8,9 +8,9 @@ const Subscribe = () => (
     name="mc-embedded-subscribe-form"
     target="_blank"
     novalidate
-    className="grid place-center h-full px-2"
+    className="px-2"
   >
-    <div id="mc_embed_signup_scroll" className="text-center m-auto">
+    <div id="mc_embed_signup_scroll" className="text-center">
       <div>
         <input
           type="email"

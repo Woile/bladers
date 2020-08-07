@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       gridTemplateRows: {
         // Complex site-specific row configuration
-        layout: "1fr auto",
+        layout: "1fr",
       },
     },
   },
