@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.js"],
+  purge: ["./public/**/*.html", "./pages/**/*.js"],
   theme: {
     extend: {
       gridTemplateRows: {
