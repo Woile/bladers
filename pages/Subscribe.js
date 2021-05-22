@@ -68,7 +68,7 @@ const Subscribe = () => (
         <input
           type="text"
           name="b_6bc18091711d9dcfef285833b_06e9cd906a"
-          tabindex="-1"
+          tabIndex="-1"
           value=""
         />
       </div>
