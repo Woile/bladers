@@ -4,6 +4,10 @@
 
 @tailwind utilities;
 
+/* .hoverMessage:hover {
+
+}
+ */
 .place-center {
   place-items: center;
 }

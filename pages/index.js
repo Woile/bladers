@@ -25,11 +25,28 @@ export default function Home() {
             <p>Join our Whatsapp group</p>
             <div className="w-full text-center flex justify-center">
               <a
+                className="hoverMessage mx-1"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://chat.whatsapp.com/B5CoRWUGkthA5lZ64d364H"
               >
-                <img width="150" src="./images/wa2.png" alt="Whatsapp group" />
+                <img width="100" src="./images/wa2.png" alt="Whatsapp group" />
+              </a>
+              <a
+                className="hoverMessage mx-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/Bladersclub-109550558016362"
+              >
+                <img width="100" src="./images/facebook-icon.png" alt="Bladers' Facebook Page" />
+              </a>
+              <a
+                className="hoverMessage mx-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/bladers.club/"
+              >
+                <img width="100" src="./images/instagram-icon.png" alt="Bladers' Instagram" />
               </a>
             </div>
           </div>
