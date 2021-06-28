@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Subscribe from "./Subscribe";
+import Counter from "./Counter";
 
 export default function Home() {
   return (
@@ -10,12 +11,12 @@ export default function Home() {
       </Head>
       <div className="grid grid-rows-layout h-screen">
         <main
-          className="grid place-center text-center bg-fixed bg-cover bg-center text-white "
+          className="grid place-center text-center bg-fixed bg-cover bg-center text-white pt-20"
           style={{ backgroundImage: "url(/images/inline.jpg)" }}
         >
           <div className="text-2xl">
             <h1
-              className="text-6xl font-mono antialiased font-extrabold tracking-tight text-orange-500 transform -skew-y-6 m-4"
+              className="text-8xl bg-gray-100 bg-opacity-80 p-4 font-mono antialiased font-extrabold tracking-tight text-yellow-600 transform -skew-y-6 m-4"
               style={{ webkitTextStroke: "2px black" }}
             >
               Bladers Club
@@ -50,6 +51,7 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <Counter />
           {/* <Subscribe /> */}
           {/* <footer>
           <nav className="bg-gray-800 p-6 text-white">
