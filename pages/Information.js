@@ -1,36 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Counter from "../components/Counter";
 
-const easeOutQuad = t => t * (2 - t);
-const frameDuration = 1000 / 60;
-const members = 24;
-
-const CountUpAnimation = ({ children, duration = 2000 }) => {
-  const countTo = parseInt(children, 10);
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let frame = 0;
-    const totalFrames = Math.round(duration / frameDuration);
-    const counter = setInterval(() => {
-      frame++;
-      const progress = easeOutQuad(frame / totalFrames);
-      setCount(countTo * progress);
-
-      if (frame === totalFrames) {
-        clearInterval(counter);
-      }
-    }, frameDuration);
-  }, []);
-
-  return Math.floor(count);
-};
-
-const Counter = () => (
+const Information = () => (
   <div className="bg-gray-100 bg-opacity-70 justify-center my-3 p-3 min-h-0 text-yellow-600">
     <div className="flex flex-col md:flex-row mx-4">
       <div className="mx-3">
         <h4 className="my-3 text-4xl font-semibold text-yellow-700">Members</h4>
-        <h6 className="text-8xl  font-extrabold mt-10"><CountUpAnimation>{members}</CountUpAnimation></h6>
+        <h6 className="text-8xl  font-extrabold mt-10"><Counter></Counter></h6>
       </div>
       <div className="mx-3 justify-center">
         <h4 className="my-3 text-4xl font-semibold text-yellow-700">We are from</h4>
@@ -56,4 +32,4 @@ const Counter = () => (
   </div >
 );
 
-export default Counter;
+export default Information;

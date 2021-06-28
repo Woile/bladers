@@ -6,9 +6,6 @@ module.exports = {
         // Complex site-specific row configuration
         layout: "1fr",
       },
-      colors: {
-        orange: '#ed8936',
-      }
     },
   },
   variants: {},

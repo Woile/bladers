@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Subscribe from "./Subscribe";
-import Counter from "./Counter";
+import Information from "./Information";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
           <div className="text-2xl">
             <h1
               className="text-8xl bg-gray-100 bg-opacity-80 p-4 font-mono antialiased font-extrabold tracking-tight text-yellow-600 transform -skew-y-6 m-4"
-              style={{ webkitTextStroke: "2px black" }}
+              style={{ WebkitTextStroke: "2px black" }}
             >
               Bladers Club
             </h1>
@@ -51,7 +51,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <Counter />
+          <Information />
           {/* <Subscribe /> */}
           {/* <footer>
           <nav className="bg-gray-800 p-6 text-white">
