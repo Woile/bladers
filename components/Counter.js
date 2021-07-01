@@ -2,9 +2,8 @@ import React, { Component, useEffect, useState } from 'react';
 
 const easeOutQuad = t => t * (2 - t);
 const frameDuration = 1000 / 60;
-const members = 24;
 
-const CountUpAnimation = ({ children, duration = 2000 }) => {
+const Counter = ({ children, duration = 2000 }) => {
   const countTo = parseInt(children, 10);
   const [count, setCount] = useState(0);
 
@@ -27,12 +26,4 @@ const CountUpAnimation = ({ children, duration = 2000 }) => {
 };
 
 
-export class Counter extends Component {
-
-  render() {
-    return (
-      <CountUpAnimation>{members}</CountUpAnimation>
-    )
-  }
-};
-export default Counter;
+export Counter;
