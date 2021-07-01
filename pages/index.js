@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Subscribe from "./Subscribe";
+import Information from "./Information";
 
 export default function Home() {
   return (
@@ -10,13 +11,13 @@ export default function Home() {
       </Head>
       <div className="grid grid-rows-layout h-screen">
         <main
-          className="grid place-center text-center bg-fixed bg-cover bg-center text-white "
+          className="grid place-center text-center bg-fixed bg-cover bg-center text-white pt-20"
           style={{ backgroundImage: "url(/images/inline.jpg)" }}
         >
           <div className="text-2xl">
             <h1
-              className="text-6xl font-mono antialiased font-extrabold tracking-tight text-orange-500 transform -skew-y-6 m-4"
-              style={{ webkitTextStroke: "2px black" }}
+              className="text-8xl bg-gray-100 bg-opacity-80 p-4 font-mono antialiased font-extrabold tracking-tight text-yellow-600 transform -skew-y-6 m-4"
+              style={{ WebkitTextStroke: "2px black" }}
             >
               Bladers Club
             </h1>
@@ -29,7 +30,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://chat.whatsapp.com/B5CoRWUGkthA5lZ64d364H"
-              ><span className="tooltip bg-gray-100 text-orange-500 rounded-lg p-2">Don't forget to say "Hello!" after get into the group</span>
+              ><span className="tooltip bg-yellow-700 text-orange-500 rounded-lg p-2">Don't forget to say "Hello!" after get into the group</span>
                 <img width="100" src="./images/wa2.png" alt="Whatsapp group" />
               </a>
               <a
@@ -50,6 +51,7 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <Information />
           {/* <Subscribe /> */}
           {/* <footer>
           <nav className="bg-gray-800 p-6 text-white">
